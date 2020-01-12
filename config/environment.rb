@@ -220,7 +220,7 @@ class MusicLibraryController
     choice = gets.chomp.to_i
     songs =  Song.all.sort_by {|obj| obj.name}
 
-    puts "Playing #{songs[choice].name} by #{songs[choice].artist.name}"
+    puts "Playing #{songs[choice-1].name} by #{songs[choice-1].artist.name}"
   end
 
 
