@@ -218,11 +218,8 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     choice = gets.chomp.to_i
-    songs = list = Song.all.sort_by {|obj| obj.name}
-    song_name = nil
-    song_artist = nil
-    binding.pry
-
+    songs = list_songs
+    
     puts "Playing #{songs[choice].name} by #{songs[choice].artist.name}"
   end
 
