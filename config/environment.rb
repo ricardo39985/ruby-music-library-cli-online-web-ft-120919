@@ -219,8 +219,10 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     choice = gets.chomp.to_i
     songs =  Song.all.sort_by {|obj| obj.name}
-
-    puts "Playing #{songs[choice-1].name} by #{songs[choice-1].artist.name}"
+    if choice < song.size
+      puts "Playing #{songs[choice-1].name} by #{songs[choice-1].artist.name}"
+    end
+    
   end
 
 
