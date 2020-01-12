@@ -177,7 +177,7 @@ class MusicLibraryController
 
     case input
     when 'list songs'
-      list_songs
+      self.list_songs
 
     end
   end
