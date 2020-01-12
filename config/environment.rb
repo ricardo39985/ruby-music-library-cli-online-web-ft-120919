@@ -175,7 +175,7 @@ class MusicLibraryController
       input = gets.chomp
       if input == 'list songs'
         list_songs
-        
+
       end
     end
 
