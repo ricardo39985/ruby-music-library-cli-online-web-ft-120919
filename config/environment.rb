@@ -222,7 +222,7 @@ class MusicLibraryController
     if choice < song.size
       puts "Playing #{songs[choice-1].name} by #{songs[choice-1].artist.name}"
     end
-    
+
   end
 
 
