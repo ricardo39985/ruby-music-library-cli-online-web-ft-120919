@@ -184,7 +184,7 @@ class MusicLibraryController
         list_songs_by_artist
       when "list genre"
         list_songs_by_genre
-    
+
       end
     end
 
