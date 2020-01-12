@@ -184,8 +184,7 @@ class MusicLibraryController
         list_songs_by_artist
       when "list genre"
         list_songs_by_genre
-      when "play song"
-        play_song
+    
       end
     end
 
